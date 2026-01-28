@@ -47,6 +47,7 @@ function renderGame() {
     } else if (sum === 21) {
         message = "You've got Blackjack!"
         hasBlackJack = true
+        cards.reset()
     } else {
         message = "You're out of the game!"
         isAlive = false
@@ -61,7 +62,6 @@ function newCard() {
         sum += card
         cards.push(card)
         renderGame()
-        
         cards.reset()
     }
 }
