@@ -61,7 +61,7 @@ function newCard() {
         sum += card
         cards.push(card)
         renderGame()
-        sum.reset()
+        
         cards.reset()
     }
 }
